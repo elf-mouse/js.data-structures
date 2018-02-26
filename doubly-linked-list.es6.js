@@ -51,10 +51,10 @@ class DoublyLinkedList {
     let current = this.head;
     while (current) {
       if (current.data === toNodeData) {
-        const node = new Node(data);
         if (current === this.tail) {
           this.add(data);
         } else {
+          const node = new Node(data);
           current.next.previous = node;
           node.previous = current;
           node.next = current.next;
@@ -128,7 +128,7 @@ doublyLinkedList.insertAfter(3, 2);
 doublyLinkedList.print(); // => 2 3 6
 doublyLinkedList.traverseReverse(node => {
   console.log(node.data);
-});
+}); // 6 3 2
 doublyLinkedList.insertAfter(4, 3);
 doublyLinkedList.print(); // => 2 3 4 6
 doublyLinkedList.insertAfter(5, 9); // insertAfter a non existing node

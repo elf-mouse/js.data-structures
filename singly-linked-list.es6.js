@@ -46,15 +46,14 @@ class SinglyLinkedList {
     let current = this.head;
     while (current) {
       if (current.data === toNodeData) {
-        const node = new Node(data);
         if (current === this.tail) {
-          this.tail.next = node;
-          this.tail = node;
+          this.add(data);
         } else {
+          const node = new Node(data);
           node.next = current.next;
           current.next = node;
+          this.numberOfValues++;
         }
-        this.numberOfValues++;
       }
       current = current.next;
     }

@@ -43,15 +43,14 @@ SinglyLinkedList.prototype.insertAfter = function(data, toNodeData) {
   var current = this.head;
   while (current) {
     if (current.data === toNodeData) {
-      var node = new Node(data);
       if (current === this.tail) {
-        this.tail.next = node;
-        this.tail = node;
+        this.add(data);
       } else {
+        var node = new Node(data);
         node.next = current.next;
         current.next = node;
+        this.numberOfValues++;
       }
-      this.numberOfValues++;
     }
     current = current.next;
   }
