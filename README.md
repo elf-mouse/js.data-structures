@@ -3,12 +3,12 @@
 ## The data structures in the series
 
 * [x] Array
-* [x] Hash Table
-* [x] Set
-* [x] Singly Linked List
-* [x] Doubly Linked List
 * [x] Stack
 * [x] Queue
+* [x] Singly Linked List
+* [x] Doubly Linked List
+* [x] Set
+* [x] Hash Table
 * [x] Tree
 * [x] Binary Search Tree
 * [x] Trie

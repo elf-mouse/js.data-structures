@@ -298,7 +298,7 @@ binarySearchTree.remove(7); // remove 7, 8 goes up
 binarySearchTree.print(); // => 6 | 3 8 | 2 4
 binarySearchTree.remove(8); // remove 8, the tree becomes unbalanced
 binarySearchTree.print(); // => 6 | 3 | 2 4
-console.log('tree is balanced is false:', binarySearchTree.isBalanced()); // => true
+console.log('tree is balanced is false:', binarySearchTree.isBalanced()); // => false
 binarySearchTree.remove(4);
 binarySearchTree.remove(2);
 binarySearchTree.remove(3);
